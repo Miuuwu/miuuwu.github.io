@@ -11,6 +11,16 @@
     <meta property="og:url" content="https://miukyo.github.io">
     <meta property="twitter:card" content="summary_large_image">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+        $(window).load(function () {
+            setTimeout(function(){
+                $('.loader-wrapper').fadeOut('slow', function () {
+                });
+            },2000);
+        });  
+    });
+    </script> 
     <link rel="icon" type="image/png" href="file/icon.png" />
     <link rel="stylesheet" href="file/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -100,15 +110,6 @@
            once: true,
        });
      </script>
-     <script>
-    jQuery(document).ready(function ($) {
-    $(window).load(function () {
-        setTimeout(function(){
-            $('.loader-wrapper').fadeOut('slow', function () {
-            });
-        },2000);
-    });  
-});
-</script> 
+    
 
 </body></html>

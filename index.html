@@ -25,7 +25,12 @@
             });
         });  
     });
-    </script> 
+    </script>
+    <script>
+        setTimeout(function(){ 
+            document.getElementById("vidli").play(); 
+        }, 8000)
+    </script>
     <link rel="icon" type="image/png" href="file/icon.png" />
     <link rel="stylesheet" href="./file/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -36,7 +41,7 @@
     <div id="wrapper">
         <div id="main">
             <img src="/file/bg.jpg" style="width: 100%;height: auto;position: fixed;top: 0;left: 0;"></img>
-            <video autoplay preload="metadata" muted id="vidli" src="file/light.webm"></video>
+            <video autoplay preload="auto" muted id="vidli" src="file/light.webm"></video>
             <div class="inner">
                 <div data-aos="fade-up" data-aos-offset="10" data-aos-delay="100" id="image01" class="image"><img src="./file/image01.png" alt="miukyo"></div>
                 <p data-aos="fade-up" data-aos-offset="10" data-aos-delay="100" class="anim" id="text04">Portfolio</p>

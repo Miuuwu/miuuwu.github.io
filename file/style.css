@@ -496,6 +496,7 @@ body:before {
 }
 
 html {
+    background-image: url("../file/bg.png") no-repeat center center fixed;
     font-size: 18pt;
 }
 

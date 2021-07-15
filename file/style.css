@@ -489,7 +489,7 @@ body:before {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    background-image: url("../file/bg.png");
+    background-image: url("../file/bg.jpg");
     background-position: 0% 0%;
     background-repeat: repeat;
     background-size: auto;
@@ -521,7 +521,6 @@ html {
 }
 
 #main {
-    background-image: url("../file/bg.png") no-repeat center center fixed;
     zoom: 80%;
     display: flex;
     position: relative;

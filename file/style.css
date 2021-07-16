@@ -1620,11 +1620,10 @@ hr:before {
         display: block;
         position: fixed;
         object-fit: cover;
-        object-position: calc(100% + 5rem);
         right: 0;
         bottom: 0;
-        width: 100%;
-        height: 100%;
+        width: 120%;
+        height: 120%;
     }
     @keyframes latter2 {
         0% {

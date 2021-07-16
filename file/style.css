@@ -1380,6 +1380,10 @@ hr:before {
     min-height: 100%;
 }
 
+.bg-mobile {
+    display: none;
+}
+
 #vidbg {
     position: fixed;
     right: 0;
@@ -1609,17 +1613,22 @@ hr:before {
     #icons01 li {
         margin: 0.25rem;
     }
+    #vidbg {
+        display: none;
+    }
+    .bg-mobile {
+        display: block;
+        position: fixed;
+        object-fit: cover;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
     @keyframes latter2 {
         0% {
             letter-spacing: 0.4px;
         }
-    }
-    .mobilevis {
-        visibility: visible;
-        position: relative;
-    }
-    .mobilevis2 {
-        display: none;
     }
 }
 

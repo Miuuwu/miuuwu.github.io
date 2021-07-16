@@ -20,15 +20,12 @@
     <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        jQuery(document).ready(function ($) {
         $(window).load(function () {
-            setInterval('1000'),
             setTimeout(function(){
-                $('.loader-wrapper').fadeOut('slow', function () {
-                });
+                $('.loader-wrapper').fadeOut('slow', function () {});
+                $('#vidli').get(0).play();
             });
-        });  
-    });
+        });
     </script>
     <link rel="icon" type="image/png" href="file/icon.png" />
     <link rel="stylesheet" href="./file/style.css" />

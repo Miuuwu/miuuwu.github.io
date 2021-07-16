@@ -18,7 +18,7 @@
     <!-- <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        $('#wrapper').waitForImages(function () {
+        $('#backgroundimg1').waitForImages(function () {
                 $('.loader-wrapper').fadeOut('slow');
                 $('#vidli').get(0).play();
         });
@@ -33,7 +33,7 @@
     <div class="loader-wrapper"></div>
     <div id="wrapper">
         <div id="main">
-            <img src="/file/bg.jpg" style="z-index: -1;width: 100%;height: auto;position: fixed;"></img>
+            <img id="backgroundimg1" src="/file/bg.jpg" style="z-index: -1;width: 100%;height: auto;position: fixed;"></img>
             <div class="inner">
                 <div data-aos="fade-up" data-aos-offset="10" data-aos-delay="100" id="image01" class="image"><img src="./file/image01.png" alt="miukyo"></div>
                 <p data-aos="fade-up" data-aos-offset="10" data-aos-delay="100" class="anim" id="text04">Portfolio</p>

@@ -1620,6 +1620,7 @@ hr:before {
         display: block;
         position: fixed;
         object-fit: cover;
+        object-position: calc(100% + 5rem);
         right: 0;
         bottom: 0;
         width: 100%;

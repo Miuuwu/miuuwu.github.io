@@ -12,19 +12,15 @@
     <meta property="twitter:card" content="summary_large_image">
     <link rel="preload" as="image" href="./file/bg.jpg">
     <link rel="preload" as="style" href="./file/style.css">
-    <link rel="preload" as="style" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="preload" as="script" href="https://unpkg.com/aos@next/dist/aos.js">
-    <link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     <link rel="preload" as="video" href="./file/light.webm">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        $(window).load(function () {
-            setInterval(function () {
+        $('selector').waitForImages(function () {
                 $('.loader-wrapper').fadeOut('slow', function () {});
                 $('#vidli').get(0).play();
-            },5000);
         });
     </script>
     <link rel="icon" type="image/png" href="file/icon.png" />
@@ -37,7 +33,7 @@
     <div class="loader-wrapper"></div>
     <div id="wrapper">
         <div id="main">
-            <img src="/file/bg.jpg" style="z-index: -1;width: auto;height: 100%;position: fixed;"></img>
+            <img src="/file/bg.jpg" style="z-index: -1;width: 100%;height: auto;position: fixed;"></img>
             <div class="inner">
                 <div data-aos="fade-up" data-aos-offset="10" data-aos-delay="100" id="image01" class="image"><img src="./file/image01.png" alt="miukyo"></div>
                 <p data-aos="fade-up" data-aos-offset="10" data-aos-delay="100" class="anim" id="text04">Portfolio</p>

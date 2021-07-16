@@ -1394,6 +1394,7 @@ hr:before {
   top: 0;
   left: 0;
   background-color: #242f3f;
+  z-index: 2121212121;
 }
 
 @media (orientation: portrait) {

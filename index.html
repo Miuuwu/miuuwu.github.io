@@ -21,8 +21,10 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         $(window).load(function () {
+            setInterval(function () {
                 $('.loader-wrapper').fadeOut('slow', function () {});
                 $('#vidli').get(0).play();
+            },5000);
         });
     </script>
     <link rel="icon" type="image/png" href="file/icon.png" />
@@ -35,7 +37,7 @@
     <div class="loader-wrapper"></div>
     <div id="wrapper">
         <div id="main">
-            <img src="/file/bg.jpg" style="z-index: -1;width: 100%;height: auto;position: fixed;"></img>
+            <img src="/file/bg.jpg" style="z-index: -1;width: auto;height: 100%;position: fixed;"></img>
             <div class="inner">
                 <div data-aos="fade-up" data-aos-offset="10" data-aos-delay="100" id="image01" class="image"><img src="./file/image01.png" alt="miukyo"></div>
                 <p data-aos="fade-up" data-aos-offset="10" data-aos-delay="100" class="anim" id="text04">Portfolio</p>

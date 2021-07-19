@@ -18,19 +18,9 @@
     <script>
         $(window).on("load", function(){
             $.ready.then(function(){
-                $('.loader-wrapper').fadeOut('fast');
                 $('#vidli').get(0).play();
+                $('.loader-wrapper').fadeOut('fast');
             });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            var screenWidth = $(window).width();
-            if (screenWidth < 800){
-                $('video').removeAttr('autoplay');
-            } else {
-                $('video').attr('autoplay');
-            }
         });
     </script>
     <link rel="icon" type="image/png" href="file/icon.png" />

@@ -1619,11 +1619,10 @@ hr:before {
     .bg-mobile {
         display: block;
         position: fixed;
-        object-fit: cover;
         right: 0;
         bottom: 0;
-        width: 120%;
-        height: 120%;
+        width: auto;
+        height: 100%;
     }
     @keyframes latter2 {
         0% {
